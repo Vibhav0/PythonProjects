@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 import os
 load_dotenv()
 SECRET_KEY = os.environ.get("SECRET_KEY")
-ALGORITHM = "HS256"
+ALGORITHM = os.environ.get("ALGORITHM")
 ACCESS_TOKEN_EXPIRE_MINUTES = 15
 
 # path to get tokens
